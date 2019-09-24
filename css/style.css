@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;	
+	-webkit-font-smoothing: antialiased;
+}
+.bg-image{
+ /* The image used */
+  background-image:url(../images/debite-equity-circle.png);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+}
+
+.bg-image .debt{
+  line-height: 32px;
+}
+
+.page-title{
+  font-weight:300;
+}
+
+.sub-title{
+  font-size:10px;
+}
+
+.highlight-item h1{
+  font-weight:400;
+  line-height: 30px;
+}
+
+.highlight-item p{
+  font-weight:300;  
+}
+
+.plan.active:after{
+  content:"";
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:5px;
+  border-radius: 8px;
+  background-color: #14a388;
+}
+
+
+.plan .left-section{
+  border:2px solid #e6e6e6;
+  border-radius:3px;
+}
+
+.plan .plan-amt{
+  background-color: #14a388;
+}
+
+.plan .cap,
+.plan .investment{
+  font-weight:300;
+  position: relative;
+}
+
+.plan .cap:after{
+  content:"";
+  position: absolute;
+  top:6px;
+  left:0;
+  height:12px;
+  width:12px;
+  border-radius:100%;
+  background-color: #14a388;
+}
+
+.note{
+  font-size:10px;
+}
+
+.cta-btn{
+  padding: .4rem 1.7rem;
+  font-size:24px;
+  background-color: #12d6b0;
+}
+
+
+
