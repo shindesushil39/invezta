@@ -168,6 +168,10 @@ color:#666666;
 .justify-content-around{
 	flex-wrap: nowrap;
 }
+.growth-direct-plan-right-section{
+margin-left: 10px;
+    margin-right: 10px;
+}
 
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -182,6 +186,12 @@ color:#666666;
 }
 .note{ 
 	text-align:center;
+}
+.highlight-item h1 {
+font-size: 22px;
+}
+.highlight-item p {
+font-size: 11px;
 }
 
 }
