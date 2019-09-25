@@ -22,24 +22,33 @@ body{
 }
 
 .bg-image .debt{
-  line-height: 32px;
+  line-height: 24px;
+	color:#12d6b0;
+}
+.bg-image .equity{
+line-height: 24px;
+	color:#425b77;
 }
 
 .page-title{
   font-weight:300;
+color:#5b5b5b;
 }
 
 .sub-title{
   font-size:10px;
+color:#808080;
 }
 
 .highlight-item h1{
   font-weight:400;
   line-height: 30px;
+color:#4d4d4d;
 }
 
 .highlight-item p{
-  font-weight:300;  
+  font-weight:300;
+color:#4d4d4d;  
 }
 
 .plan.active:after{
@@ -57,13 +66,24 @@ body{
 .plan .left-section{
   border:2px solid #e6e6e6;
   border-radius:3px;
+
+}
+.plan .left-section h6, .plan .left-section p{
+color:#666666;
 }
 
 .plan .plan-amt{
   background-color: #14a388;
 }
+.plan .plan-amt2{
+  background-color: #13bc9c;
+}
+.plan .plan-amt3{
+  background-color: #425b77;
+}
 
-.plan .cap,
+
+.plan .cap, .plan .cap2, .plan .cap3,
 .plan .investment{
   font-weight:300;
   position: relative;
@@ -80,6 +100,28 @@ body{
   background-color: #14a388;
 }
 
+.plan .cap2:after{
+  content:"";
+  position: absolute;
+  top:6px;
+  left:0;
+  height:12px;
+  width:12px;
+  border-radius:100%;
+  background-color: #13bc9c;
+}
+
+.plan .cap3:after{
+  content:"";
+  position: absolute;
+  top:6px;
+  left:0;
+  height:12px;
+  width:12px;
+  border-radius:100%;
+  background-color: #425b77;
+}
+
 .note{
   font-size:10px;
 }
@@ -91,4 +133,59 @@ body{
 }
 
 
+/* ----------------------------------
+	Responsive
+---------------------------------- */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
 
+.highlight-item h1, .highlight-item p{ 
+	text-align:center;
+}
+.highlight-item{ 
+	margin-bottom:3rem;
+}
+.highlight-item .mr-3 img{
+	margin-bottom:1rem;
+}
+.page-title{
+	font-size:30px;
+}
+.bg-image{ 
+	width:100%; 
+	height:340px; 
+	background-size: inherit;
+}
+.growth-direct-plan-left-section{
+	padding-bottom:2rem; 
+	margin:0px;
+}
+.note{ 
+	text-align:center;
+}
+.left-section{ 
+	border:1px solid;
+}
+.justify-content-around{
+	flex-wrap: nowrap;
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.bg-image{ 
+	width:100%; 
+	height:340px; 
+	background-size: inherit;
+}
+.growth-direct-plan-left-section{
+	padding-bottom:2rem; 
+	margin:0px;
+}
+.note{ 
+	text-align:center;
+}
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+.highlight-item h1 { font-size:30px;}
+}
